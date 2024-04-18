@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Clean House</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
         body {
             background-color: #f8f9fa;
         }
         .cadastro-container {
-            max-width: 400px;
+            max-width: 900px;
             margin: 0 auto;
             padding-top: 100px;
         }
@@ -34,7 +36,7 @@
             padding: 10px;
             border-radius: 5px;
             border: none;
-            background-color: #28a745;
+            background-color: #295ac4;
             color: #fff;
             cursor: pointer;
         }
@@ -42,32 +44,62 @@
 </head>
 <body>
 
-<div class="container cadastro-container">
-    <div class="cadastro-form">
-        <h2 class="text-center mb-4">Cadastro</h2>
-        <form>
-            <div class="form-group">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" class="form-control" placeholder="Digite seu usuário" required>
+    <div class="container cadastro-container">
+        <div class="cadastro-form">
+            <h2 class="text-center mb-4">Cadastro</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" class="form-control" placeholder="Digite seu usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                </div>
+    
+                <!-- Detalhes Adicionais -->
+                <div class="form-group">
+                    <label for="accountType">Tipo de Conta:</label>
+                    <select id="accountType" class="form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="prestador">Prestador de Serviço</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="services">Serviços:</label>
+                    <input type="text" id="services" class="form-control" placeholder="Digite os serviços que oferece" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Localização:</label>
+                    <input type="text" id="location" class="form-control" placeholder="Digite sua localização" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descrição:</label>
+                    <textarea id="description" class="form-control" placeholder="Descreva-se ou descreva seus serviços" rows="3" required></textarea>
+                </div>
+    
+                <!-- Botão de Cadastro -->
+                <button type="submit" class="btn btn-cadastro">Cadastrar</button>
+            </form>
+            <div class="text-center mt-3">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" class="form-control" placeholder="Digite seu email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required>
-            </div>
-            <button type="submit" class="btn btn-cadastro">Cadastrar</button>
-        </form>
-        <div class="text-center mt-3">
-            <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
         </div>
     </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    
+    <!-- Bootstrap JS e jQuery (opcional, dependendo do uso) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    
 </html>
