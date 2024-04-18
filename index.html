@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Serviços - Clean House</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Estilos personalizados aqui */
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .jumbotron {
+            background-image: url('https://source.unsplash.com/1600x900/?cleaning');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+        .search-form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+        .search-form button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="./imagem/logo.png" alt="Clean House Logo">
+        Clean House
+    </a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastrar</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Buscar Serviços</h1>
+        <p>Encontre os melhores profissionais para suas necessidades de limpeza e muito mais.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="search-form">
+                    <input type="text" class="form-control" placeholder="Digite o serviço que está procurando...">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Conteúdo da página -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://source.unsplash.com/400x300/?cleaning" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Limpeza Residencial</h5>
+                    <p class="card-text">Encontre profissionais para limpar a sua casa de forma eficiente.</p>
+                    <a href="limpezaResidencial.html" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://source.unsplash.com/400x300/?plumber" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Encanamento</h5>
+                    <p class="card-text">Problemas com vazamentos? Encontre especialistas em encanamento aqui.</p>
+                    <a href="encanamento.html" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://source.unsplash.com/400x300/?electrician" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Eletricista</h5>
+                    <p class="card-text">Precisando de reparos elétricos? Encontre profissionais qualificados.</p>
+                    <a href="eletricista.html" class="btn btn-primary">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS e jQuery (opcional, dependendo do uso) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
