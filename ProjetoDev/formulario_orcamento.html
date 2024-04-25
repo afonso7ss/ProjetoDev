@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Orçamento - Clean House</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #025685;
+            color: #fff;
+        }
+        .navbar .nav-link {
+            color: #fff; 
+        }
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 20px;
+        }
+        .jumbotron {
+            background-color: #025685;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .jumbotron h1 {
+            font-size: 3.5rem;
+        }
+        .form-container {
+            background-color:rgb(255, 255, 249);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(12, 216, 97, 0.1);
+            margin-top: -50px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-control {
+            border-radius: 5px;
+            border: none;
+        }
+        .btn {
+            background-color: #025685;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #fff;
+            color: #025685;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">
+        <img src="./imagem/logo.png" alt="Clean House Logo">
+    </a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastrar</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Formulário de Orçamento</h1>
+        <p>Envie-nos uma mensagem e entraremos em contato o mais breve possível.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <form id="orcamentoForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <input type="button" value="Enviar" class="btn" onclick="enviarOrcamento()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function enviarOrcamento() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var telefone = document.getElementById("telefone").value;
+        var mensagem = document.getElementById("mensagem").value;
+
+        console.log("Dados do formulário:");
+        console.log("Nome: " + nome);
+        console.log("Email: " + email);
+        console.log("Telefone: " + telefone);
+        console.log("Mensagem: " + mensagem);
+    }
+</script>
+
+</body>
+</html>
